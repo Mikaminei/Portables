@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "portables",
+	"version": "${version}",
+	"name": "Portables",
+	"description": "Portables adds intuitive and useful ways to access your workbenches.",
+	"authors": [
+		"Mikaminei"
+	],
+	"contact": {
+		"homepage": "https://github.com/Mikaminei",
+		"sources": "https://github.com/Mikaminei/PocketStorage"
+	},
+	"license": "MIT",
+	"icon": "assets/pocket-storage/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.mikaminei.portables.Portables"
+		],
+		"client": [
+			"de.mikaminei.portables.PortablesClient"
+		],
+		"fabric-datagen": [
+			"de.mikaminei.portables.PortablesDataGenerator"
+		]
+	},
+	"mixins": [
+		"portables.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:iron_nugget",
+    "L": "minecraft:leather",
+    "T": "minecraft:crafting_table"
+  },
+  "pattern": [
+    "ILI",
+    "LTL",
+    "ILI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pocket-storage:crafting_tablet"
+  }
+}

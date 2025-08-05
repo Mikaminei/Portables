@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "de.mikaminei.portables.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"EnchantmentScreenHandlerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

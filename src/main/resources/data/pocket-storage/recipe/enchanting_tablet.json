@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:iron_nugget",
+    "G": "minecraft:glass",
+    "T": "minecraft:enchanting_table"
+  },
+  "pattern": [
+    "IGI",
+    "GTG",
+    "IGI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pocket-storage:enchanting_tablet"
+  }
+}
