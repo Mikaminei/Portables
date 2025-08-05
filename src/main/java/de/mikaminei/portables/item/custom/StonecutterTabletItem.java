@@ -1,6 +1,6 @@
 package de.mikaminei.portables.item.custom;
 
-import de.mikaminei.portables.screen.CraftingTabletScreenHandlerFactory;
+import de.mikaminei.portables.screen.StonecutterTabletScreenHandlerFactory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -10,9 +10,9 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
-public class CraftingTabletItem extends Item {
+public class StonecutterTabletItem extends Item {
 
-    public CraftingTabletItem(Settings settings) {
+    public StonecutterTabletItem(Settings settings) {
         super(settings.maxCount(1));
     }
 
@@ -22,9 +22,9 @@ public class CraftingTabletItem extends Item {
 
         ServerPlayerEntity player = (ServerPlayerEntity) user;
 
-        player.openHandledScreen(new CraftingTabletScreenHandlerFactory(
-                Text.translatable("item.portables.crafting_tablet.title")));
-        player.incrementStat(Stats.INTERACT_WITH_CRAFTING_TABLE);
+        player.openHandledScreen(new StonecutterTabletScreenHandlerFactory(
+                Text.translatable("item.portables.stonecutter_tablet.title")));
+        player.incrementStat(Stats.INTERACT_WITH_STONECUTTER);
 
         return ActionResult.SUCCESS;
     }

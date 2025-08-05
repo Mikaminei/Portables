@@ -3,6 +3,7 @@ package de.mikaminei.portables.item;
 import de.mikaminei.portables.Portables;
 import de.mikaminei.portables.item.custom.CraftingTabletItem;
 import de.mikaminei.portables.item.custom.EnchantingTabletItem;
+import de.mikaminei.portables.item.custom.StonecutterTabletItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -19,6 +20,8 @@ public class ModItems {
             register("crafting_tablet", CraftingTabletItem::new, new Item.Settings());
     public static final Item ENCHANTING_TABLET =
             register("enchanting_tablet", EnchantingTabletItem::new, new Item.Settings());
+    public static final Item STONECUTTER_TABLET =
+            register("stonecutter_tablet", StonecutterTabletItem::new, new Item.Settings());
 
     private ModItems() {}
 
@@ -37,6 +40,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(itemGroup -> {
             itemGroup.add(CRAFTING_TABLET);
             itemGroup.add(ENCHANTING_TABLET);
+            itemGroup.add(STONECUTTER_TABLET);
         });
     }
 }

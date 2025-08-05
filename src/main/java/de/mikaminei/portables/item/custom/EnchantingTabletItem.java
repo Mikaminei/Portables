@@ -22,7 +22,7 @@ public class EnchantingTabletItem extends Item {
         ServerPlayerEntity player = (ServerPlayerEntity) user;
 
         player.openHandledScreen(new EnchantingTabletScreenHandlerFactory(
-                Text.translatable("item.pocket-storage.enchanting_tablet.title")));
+                Text.translatable("item.portables.enchanting_tablet.title")));
 
         return ActionResult.SUCCESS;
     }
